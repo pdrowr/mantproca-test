@@ -1,0 +1,12 @@
+#brands {
+  .img-responsive{
+    width: 70%;
+  }
+  .brands-cont-items{
+    display: inline-block;
+  }
+  .brands-cont{
+    display: flex;
+    justify-content: space-around;
+  }
+}

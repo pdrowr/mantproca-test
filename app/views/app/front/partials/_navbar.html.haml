@@ -1,0 +1,22 @@
+%nav.navbar.navbar-static-top.yamm.ms-navbar.ms-navbar-primary
+  .container.container-full
+    .navbar-header
+      %a.navbar-brand{:href => "index.html"}
+        %img.logo-header.img-responsive{:alt => "Logotipo", :src => "assets/img/logo_white2.svg", :style => "height: 38px"}/
+    #navbar.navbar-collapse.collapse
+      %ul.nav.navbar-nav.hidden-sm
+        %li
+          %a{"data-scroll" => "", :href => "index.html#home"} Inicio
+        %li
+          %a{"data-scroll" => "", :href => "aboutus.html"} Quienes Somos
+        %li
+          %a{"data-scroll" => "", :href => "index.html#services2"} Servicios
+        %li
+          %a{"data-scroll" => "", :href => "index.html#portfolio"} Proyectos
+        %li
+          %a{"data-scroll" => "", :href => "index.html#contact"} Contáctenos
+    / navbar-collapse collapse
+    %a.btn-navbar-menu.visible-sm.visible-xs{:href => "javascript:void(0)", :onclick => "toggleNav()"}
+      %i.zmdi.zmdi-menu
+= slider
+= services

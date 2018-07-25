@@ -1,0 +1,32 @@
+%meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+%meta{:charset => "utf-8"}/
+%meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+%meta{:content => "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+%meta{:content => "#333", :name => "theme-color"}/
+%title Mantproca
+%meta{:content => "MANTPROCA CA es una empresa venezolana que se especializa en la ejecución de proyectos de electricidad, instrumentación, sistema contra incendios, sistema de seguridad, detección de gases tóxicos e inflamables, mantenimiento en general, proyectos con soldaduras, proyectos civiles y mecánicos, suministro de equipos y materiales industriales, consumibles técnicos, arreglos generales. ", :name => "description"}/
+%link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
+%link{:as => "style", :href => "assets/css/app.min.css", :onload => "this.onload=null;this.rel='stylesheet'", :rel => "preload"}/
+%noscript
+  %link{:href => "assets/css/app.min.css", :rel => "stylesheet"}/
+:javascript
+  !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+/[if lt IE 9]
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+
+// Title & Meta tags
+= render 'app/layouts/meta_tags'
+
+// Stylesheets
+= stylesheet_link_tag 'app/application', media: 'all', 'data-turbolinks-track' => true
+= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Patua+One'
+= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css'
+
+// Javascripts
+= javascript_include_tag 'app/application', 'data-turbolinks-track' => true
+= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'
+
+// Google Analytics
+= render 'app/layouts/google_analytics'

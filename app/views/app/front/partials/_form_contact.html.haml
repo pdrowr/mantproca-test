@@ -1,0 +1,39 @@
+/ Formulario de contactos
+%section#contact.ms-hero-bg-primary
+  .bg-trama-1
+    .container
+      .text-center.mt-8
+        %h2.no-m.ms-site-title.color-primary.center-block.ms-site-title-lg.mt-2.animated.zoomInDown.animation-delay-5 Contáctenos
+        / <p class="lead lead-lg text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">¿Necesitas conocer la opinión de tus clientes?<br>Un formulario de contactos, sencillo y directo es una tremenda herramienta.</p>
+      / /.text-center
+    / /.container
+  / /.bg-trama-1
+  .container
+    .card.card-hero.animated.fadeInUp.animation-delay-7
+      .card-block
+        %form.form-horizontal
+          %fieldset
+            .form-group.is-empty
+              %label.col-md-2.control-label{:for => "inputName"} Nombre
+              .col-md-9
+                %input#inputName.form-control{:placeholder => "Indique su nombre", :type => "text"}/
+              %span.material-input
+            .form-group.is-empty
+              %label.col-md-2.control-label{:for => "inputEmail"} Email
+              .col-md-9
+                %input#inputEmail.form-control{:placeholder => "Escriba su Email", :type => "email"}/
+              %span.material-input
+            .form-group.is-empty
+              %label.col-md-2.control-label{:for => "textArea"} Mensaje
+              .col-md-9
+                %textarea#textArea.form-control{:placeholder => "Por favor escriba aquí su mensaje...", :rows => "5"}
+              %span.material-input
+            .form-group
+              .col-xs-12.col-sm-6
+                .jumbotron.text-center
+                  Espacio para Recapcha
+              .col-xs-12.col-sm-6.text-center
+                %button.btn.btn-raised.btn-gray{:type => "submit"} Enviar
+                %button.btn.btn-danger{:type => "button"} Cancelar
+  / /.container
+  %br/

@@ -1,0 +1,40 @@
+/ Galería
+%section#portfolio
+  .wrap.ms-hero-bg-dark.ms-hero-img-boat.ms-bg-fixed
+    .container.index-1
+      .text-center.color-white.mb-4.mw-800.center-block
+        %h1.wow.fadeInUp.animation-delay-2 Proyectos
+        %p.lead.color-medium.wow.fadeInUp.animation-delay-2
+          Personal calificado y con experiencia en el sector del
+          = succeed "." do
+            %span.color-white petróleo, gas, petroquímica, energía y agua.
+            %span Experiencia profesional en la implementación de servicios de baja instrumentación
+          %span.color-white nacionales e internacionales
+          , con seguridad industrial total.
+      .row
+        .col-sm-6.mb-4
+          .ms-thumbnail-container.wow.fadeInUp
+            %figure.ms-thumbnail.ms-thumbnail-diagonal.ms-thumbnail-info
+              %img.img-responsive{:alt => "...", :src => "assets/img/proyecto1.jpg"}/
+              %figcaption.ms-thumbnail-caption.text-center
+                .ms-thumbnail-caption-content
+                  %h3.ms-thumbnail-caption-title Mantenimiento y suministro al Crucero Winterfell
+                  %p Trabajos de mantenimiento general y suministro de víveres al Crucero Winterfell de la Naviera White Start.
+                  %a.btn.btn-raised.btn-danger{:href => "portfolio2.html"}
+                    %i.zmdi.zmdi-eye
+                    Ver más ...
+        .col-sm-6.mb-4
+          .ms-thumbnail-container.wow.fadeInUp
+            %figure.ms-thumbnail.ms-thumbnail-diagonal.ms-thumbnail-info
+              %img.img-responsive{:alt => "...", :src => "assets/img/proyecto2.jpg"}/
+              %figcaption.ms-thumbnail-caption.text-center
+                .ms-thumbnail-caption-content
+                  %h3.ms-thumbnail-caption-title Soldadura de taque en CRP.
+                  %p Trabajos de mantenimiento general y suministro de víveres al Crucero Winterfell de la Naviera White Start.
+                  %a.btn.btn-raised.btn-danger{:href => "portfolio2.html"}
+                    %i.zmdi.zmdi-eye
+                    Ver más ...
+      %center
+        %a.btn.btn-primary.btn-xlg.btn-raised.animated.flipInX.animation-delay-4{:href => "projects.html"}
+          %i.fa.fa-eye
+          Todos los proyectos

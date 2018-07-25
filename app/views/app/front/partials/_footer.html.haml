@@ -1,0 +1,104 @@
+/ Footer
+%aside.ms-footbar
+  .ms-hero-bg-dark
+    .container
+      .row
+        .col-md-4.ms-footer-col.pt-3
+          %img.logo-header.img-responsive.center-block{:alt => "Logotipo", :src => "assets/img/logo_white.svg", :style => "max-width: 300px"}/
+          %p.text-white.text-center.text-footer.mt-2
+            Una empresa venezolana que se especializa en la ejecución de proyectos de electricidad, instrumentación, sistema contra incendios, sistema de seguridad, detección de gases tóxicos e inflamables, mantenimiento en general, proyectos con soldaduras, proyectos civiles y mecánicos, suministro de equipos y materiales industriales, consumibles técnicos, arreglos generales.
+          / Sitemap
+          .ms-footbar-block{:style => "border-top: 1px solid #222"}
+            %h3.ms-footbar-title.mt-2 Sitemap
+            %ul.list-unstyled.ms-icon-list.two_cols
+              %li
+                %a{:href => "index.html"}
+                  %i.zmdi.zmdi-home
+                  Inicio
+              %li
+                %a{:href => "#services"}
+                  %i.fa.fa-fa
+                  Servicios
+              %li
+                %a{:href => "portfolio.html"}
+                  %i.zmdi.zmdi-case
+                  Proyectos
+          / /. Sitemap
+        / Footer About Us
+        / Proyectos
+        .col-sm-6.col-md-4.ms-footer-col.pt-3
+          .ms-footbar-block
+            %h3.ms-footbar-title.mb-2 Últimos Proyectos
+            .ms-footer-media
+              .media
+                .media-left.media-middle
+                  %a{:href => "javascript:void(0)"}
+                    %img.media-object.media-object-circle{:alt => "...", :src => "assets/img/art1.jpg"}/
+                .media-body
+                  %h4.media-heading
+                    %a{:href => "javascript:void(0)"} Mantenimiento y suministro al Crucero Winterfell.
+                  .media-footer
+                    %span
+                      %i.zmdi.zmdi-time.color-info-light
+                      02 de julio de 2018
+              .media
+                .media-left.media-middle
+                  %a{:href => "javascript:void(0)"}
+                    %img.media-object.media-object-circle{:alt => "...", :src => "assets/img/art2.jpg"}/
+                .media-body
+                  %h4.media-heading
+                    %a{:href => "javascript:void(0)"} Soldadura de taque en el CRP.
+                  .media-footer
+                    %span
+                      %i.zmdi.zmdi-time.color-info-light
+                      15 de junio de 2018
+              .media
+                .media-left.media-middle
+                  %a{:href => "javascript:void(0)"}
+                    %img.media-object.media-object-circle{:alt => "...", :src => "assets/img/art3.jpg"}/
+                .media-body
+                  %h4.media-heading
+                    %a{:href => "javascript:void(0)"} Fabricación de engranes para generador trifásico.
+                  .media-footer
+                    %span
+                      %i.zmdi.zmdi-time.color-info-light
+                      03 de junio de 2018
+        / /. Artículos del Blog
+        .col-sm-6.col-md-4.ms-footer-col.ms-footer-text-right.pt-3
+          .ms-footbar-block
+            %address.mb-1.pb-1
+              %p
+                %i.color-warning-light.zmdi.zmdi-map.mr-1>
+                Venezuela
+              %p.addre
+                %i.color-danger-light.zmdi.zmdi-pin.mr-1
+                Esquina Bolívar con Ampíes, Edif. Minanca, Piso Pb, Of #1, Sector Punta Cardón, Punto Fijo, Estado Falcón.
+              %p
+                %i.color-info-light.zmdi.zmdi-email.mr-1
+                %a{:href => "mailto:mantproca@gmail.com"} mantproca@gmail.com
+                %a{:href => "mailto:mantproca.contratos@gmail.com"} mantproca.contratos@gmail.com
+              %p
+                %i.color-royal-light.zmdi.zmdi-phone.mr-1>
+                (+58) 4246090022 / 4126497442
+            %address.pt-2{:style => "border-top:1px solid #222"}
+              %p
+                %i.color-warning-light.zmdi.zmdi-map.mr-1>
+                Perú
+              %p.addre
+                %i.color-danger-light.zmdi.zmdi-pin.mr-1
+                Departamento Piura, Provincia Talara, Distrito Pariñas, Urb. Los Pinos I etapa, lote L, Dpto. 07.
+              %p
+                %i.color-info-light.zmdi.zmdi-email.mr-1
+                %a{:href => "mailto:mantproca@gmail.com"} mantproca@gmail.com
+                %a{:href => "mailto:mantproca.technical@gmail.com"} mantproca.technical@gmail.com
+              %p
+                %i.color-royal-light.zmdi.zmdi-phone.mr-1>
+                (+51) 920069885 / 957218901
+%footer.ms-footer{:style => "background: #030202"}
+  .container
+    %p
+      Copyright © Mantproca 2018  |  Power by
+      %a{:href => "http://www.slicegroup.xyz/", :target => "_blank"} Slice Group
+      whith
+      %a{:href => "http://keppleradmin.com", :target => "_blank"}
+        %img.keppler-logo{:alt => "Keppler", :src => "assets/img/keppler-logo.svg"}/

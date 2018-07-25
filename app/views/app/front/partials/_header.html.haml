@@ -1,0 +1,19 @@
+.sb-site-container
+  #sidenav-mask
+  %header.ms-header.ms-header-white
+    .container.container-full
+      .ms-title
+        %a{:href => "index.html"}
+          %img.logo-header.img-responsive.animated.zoomInDown.animation-delay-20{:alt => "Logotipo", :src => "assets/img/logo.svg"}/
+      .header-right.phone-cont.animated.fadeInRight.animation-delay-22{:style => "margin-top: 10px"}
+        %div
+          %img.phone-cont-item.img-responsive{:alt => "...", :src => "assets/img/phone.svg"}/
+        %div
+          %span.phone-header 424-6090020 / 412-6497442
+        %div
+          %img.phone-cont-item.img-responsive{:alt => "...", :src => "assets/img/phone2.svg"}/
+        %div
+          %span.phone-header 920069885 / 957218901
+  / /. Fin cabecera principal
+  %a#btnLanguage.ms-conf-btn.ms-configurator-btn.btn-circle.btn-circle-raised.btn-circle-primary.animated.rubberBand.hidden-xs{:href => "javascript:void(0)", :onclick => "FbotonEsEn()"} EN
+  = navbar

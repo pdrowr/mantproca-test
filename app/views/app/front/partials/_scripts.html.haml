@@ -1,0 +1,22 @@
+/ /.Fin sb-site-container - Contenedor general
+/ Core JS
+%script{:src => "assets/js/plugins.min.js"}
+%script{:src => "assets/js/app.min.js"}
+%script{:src => "assets/js/lead.js"}
+%script{:src => "assets/js/ecommerce.js"}
+%script{:src => "assets/js/slick.min.js"}
+%script{:src => "assets/js/custom.js"}
+:javascript
+  var value = true
+  function FbotonEsEn() {
+    var changeLang = document.getElementById('btnLanguage');
+    value?changeLang.innerText = "ES":changeLang.innerText = "EN";
+    value=!value
+  }
+
+  var value2 = true
+  function FbotonEsEnM() {
+    var changeLang = document.getElementById('btnLanguageM');
+    value2?changeLang.innerText = "ES":changeLang.innerText = "EN";
+    value2=!value2
+  }

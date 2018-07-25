@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  index: MyString
+  portfolio2: MyString
+  projects: MyString
+  project-item: MyString
+  aboutus: MyString
+
+two:
+  index: MyString
+  portfolio2: MyString
+  projects: MyString
+  project-item: MyString
+  aboutus: MyString
